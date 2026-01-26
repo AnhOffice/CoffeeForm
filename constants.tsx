@@ -57,35 +57,35 @@ export const DATA = {
         id: '1',
         name: 'Văn Quế Hương',
         role: 'Chief Executive Officer',
-        image: '/images/team/QueHuong.jpg',
+        image: 'images/team/QueHuong.jpg',
         bio: 'Responsible for managing and organizing overall project operations. Supports team members, monitors work progress, and ensures tasks are executed according to the established plan.'
       },
       {
         id: '2',
         name: 'Trần Thị Tuyết Mai',
         role: 'Product Director',
-        image: '/images/team/TuyetMai.jpg',
+        image: 'images/team/TuyetMai.jpg',
         bio: 'Responsible for building and refining project products. Participates in monitoring implementation process, evaluating and proposing adjustments to ensure products meet user needs.'
       },
       {
         id: '3',
         name: 'Nguyễn Thị Phương Nghi',
         role: 'Marketing Director',
-        image: '/images/team/PhuongNghi.jpg',
+        image: 'images/team/PhuongNghi.jpg',
         bio: 'Responsible for developing and implementing communication activities for the project. Creates content ideas, manages communication channels and supports brand image promotion.'
       },
       {
         id: '4',
         name: 'Trần Thị Mỹ Hiền',
         role: 'Business Director',
-        image: '/images/team/MyHien.jpg',
+        image: 'images/team/MyHien.jpg',
         bio: 'Responsible for market research and customer connection support. Monitors business performance and proposes improvement solutions aligned with team objectives.'
       },
       {
         id: '5',
         name: 'Lương Thị Tố Tố',
         role: 'Finance Director',
-        image: '/images/team/ToTo.jpg',
+        image: 'images/team/ToTo.jpg',
         bio: 'Responsible for budget management, cost monitoring and financial planning support for the project. Ensures that revenues and expenses are controlled and used appropriately.'
       }
     ],
@@ -328,35 +328,35 @@ export const DATA = {
         id: '1',
         name: 'Văn Quế Hương',
         role: 'GIÁM ĐỐC ĐIỀU HÀNH',
-        image: '/images/team/QueHuong.jpg',
+        image: 'images/team/QueHuong.jpg',
         bio: 'Phụ trách điều hành và tổ chức hoạt động chung của dự án. Hỗ trợ các thành viên trong nhóm, theo dõi tiến độ công việc và đảm bảo các nhiệm vụ được thực hiện đúng kế hoạch đã đề ra.'
       },
       {
         id: '2',
         name: 'Trần Thị Tuyết Mai',
         role: 'GIÁM ĐỐC SẢN PHẨM',
-        image: '/images/team/TuyetMai.jpg',
+        image: 'images/team/TuyetMai.jpg',
         bio: 'Phụ trách xây dựng và hoàn thiện sản phẩm của dự án. Tham gia theo dõi quá trình thực hiện, đánh giá và đề xuất điều chỉnh để sản phẩm phù hợp với nhu cầu sử dụng.'
       },
       {
         id: '3',
         name: 'Nguyễn Thị Phương Nghi',
         role: 'GIÁM ĐỐC TIẾP THỊ',
-        image: '/images/team/PhuongNghi.jpg',
+        image: 'images/team/PhuongNghi.jpg',
         bio: 'Phụ trách xây dựng và triển khai các hoạt động truyền thông cho dự án. Lên ý tưởng nội dung, quản lý các kênh truyền thông và hỗ trợ quảng bá hình ảnh thương hiệu.'
       },
       {
         id: '4',
         name: 'Trần Thị Mỹ Hiền',
         role: 'GIÁM ĐỐC KINH DOANH',
-        image: '/images/team/MyHien.jpg',
+        image: 'images/team/MyHien.jpg',
         bio: 'Phụ trách nghiên cứu thị trường và hỗ trợ kết nối khách hàng, theo dõi hiệu quả hoạt động kinh doanh và đề xuất giải pháp cải thiện phù hợp với mục tiêu của nhóm.'
       },
       {
         id: '5',
         name: 'Lương Thị Tố Tố',
         role: 'GIÁM ĐỐC TÀI CHÍNH',
-        image: '/images/team/ToTo.jpg',
+        image: 'images/team/ToTo.jpg',
         bio: 'Phụ trách quản lý ngân sách, theo dõi chi phí và hỗ trợ lập kế hoạch tài chính cho dự án. Đảm bảo các khoản thu chi được kiểm soát và sử dụng hợp lý.'
       }
     ],
