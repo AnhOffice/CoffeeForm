@@ -9,6 +9,7 @@ import OrderPage from './components/OrderPage.tsx';
 import BlogDetail from './components/BlogDetail.tsx';
 import { LanguageProvider } from './context/LanguageContext.tsx';
 import { ThemeProvider } from './context/ThemeContext.tsx';
+import { CartProvider } from './context/CartContext.tsx';
 
 const App: React.FC = () => {
   // Basename for GitHub Pages - only in production
@@ -17,7 +18,8 @@ const App: React.FC = () => {
   return (
     <ThemeProvider>
       <LanguageProvider>
-      <Router basename={basename}>
+        <CartProvider>
+          <Router basename={basename}>
         <div className="min-h-screen custom-scrollbar">
           <Navbar />
           <main>
@@ -31,8 +33,9 @@ const App: React.FC = () => {
           </main>
           <Footer />
         </div>
-      </Router>
-    </LanguageProvider>
+          </Router>
+        </CartProvider>
+      </LanguageProvider>
     </ThemeProvider>
   );
 };

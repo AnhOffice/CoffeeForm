@@ -1,17 +1,21 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, ArrowRight, Star, Shield, Truck } from 'lucide-react';
 import { DATA } from '../constants.tsx';
 import { useLanguage } from '../context/LanguageContext.tsx';
+import { useCart } from '../context/CartContext.tsx';
+import { ShoppingCart } from 'lucide-react';
 import MotionWrapper from './MotionWrapper.tsx';
 
 const ProductDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const { language } = useLanguage();
+  const { addToCart } = useCart();
   const products = DATA[language].products;
   const content = DATA[language].ui.product_detail;
   
   const product = products.find(p => p.id === id);
+  const [quantity, setQuantity] = useState(1);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -90,14 +94,50 @@ const ProductDetail: React.FC = () => {
 
               <div className="h-px bg-[#3E2723]/10 w-full mb-8" />
               
+              {/* Quantity Selector */}
+              <div className="flex items-center gap-6 mb-8">
+                <span className="font-bold text-[#3E2723] text-lg">{content.quantity}:</span>
+                <div className="flex items-center bg-[#F5F5DC] rounded-xl border border-[#D7CCC8] p-1 shadow-inner">
+                  <button 
+                    onClick={() => setQuantity(q => Math.max(1, q - 1))}
+                    className="w-10 h-10 flex items-center justify-center text-[#3E2723] hover:bg-white rounded-lg transition-colors disabled:opacity-30 disabled:hover:bg-transparent"
+                    disabled={quantity <= 1}
+                  >
+                    <span className="text-xl font-bold">-</span>
+                  </button>
+                  <span className="w-12 text-center font-bold text-[#3E2723] text-xl">{quantity}</span>
+                  <button 
+                    onClick={() => setQuantity(q => Math.min(10, q + 1))}
+                    className="w-10 h-10 flex items-center justify-center text-[#3E2723] hover:bg-white rounded-lg transition-colors disabled:opacity-30 disabled:hover:bg-transparent"
+                    disabled={quantity >= 10}
+                  >
+                    <span className="text-xl font-bold">+</span>
+                  </button>
+                </div>
+              </div>
+
               {/* Order Button Section */}
-              <Link 
-                to={`/order/${product.id}`}
-                className="w-full py-4 bg-[#3E2723] text-white rounded-lg font-bold flex items-center justify-center gap-2 hover:bg-[#3E2723]/90 transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-              >
-                <span>{content.order_now}</span>
-                <ArrowRight className="w-4 h-4 ml-1" />
-              </Link>
+              <div className="flex gap-4">
+                <button
+                  onClick={() => {
+                    addToCart(product, quantity);
+                    setQuantity(1);
+                  }}
+                  className="flex-1 py-4 bg-white border-2 border-[#3E2723] text-[#3E2723] rounded-lg font-bold flex items-center justify-center gap-2 hover:bg-[#F5F5DC] transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                >
+                  <ShoppingCart className="w-5 h-5" />
+                  <span>{content.add_to_cart}</span>
+                </button>
+
+                <Link 
+                  to="/order/cart"
+                  onClick={() => addToCart(product, quantity)}
+                  className="flex-1 py-4 bg-[#3E2723] text-white rounded-lg font-bold flex items-center justify-center gap-2 hover:bg-[#3E2723]/90 transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                >
+                  <span>{content.order_now}</span>
+                  <ArrowRight className="w-4 h-4 ml-1" />
+                </Link>
+              </div>
 
             </MotionWrapper>
           </div>

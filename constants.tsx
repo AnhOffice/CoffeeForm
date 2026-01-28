@@ -260,7 +260,9 @@ export const DATA = {
         reviews: 'reviews',
         warranty: '2 Year Warranty',
         shipping: 'Free Shipping',
-        order_now: 'Order Now'
+        order_now: 'Order Now',
+        quantity: 'Quantity',
+        add_to_cart: 'Add to Cart'
       },
       order_page: {
         back_product: 'Back to Product',
@@ -450,7 +452,7 @@ export const DATA = {
     ],
     ui: {
       hero: {
-        subtitle: 'Từ Bã Cà Phê Đến Nghệ Thuật',
+        subtitle: 'Hành trình từ tách cà phê đến tác phẩm nghệ thuật',
         title: 'Sống Lại \n Cuộc Đời Mới',
         description: 'Chúng tôi biến bã cà phê bỏ đi thành những món đồ thiết kế bền vững, trân trọng sự không hoàn hảo và câu chuyện vòng đời của chúng.',
         cta_collection: 'Xem Bộ Sưu Tập',
@@ -531,7 +533,9 @@ export const DATA = {
         reviews: 'đánh giá',
         warranty: 'Bảo Hành 2 Năm',
         shipping: 'Miễn Phí Vận Chuyển',
-        order_now: 'Đặt Hàng Ngay'
+        order_now: 'Đặt Hàng Ngay',
+        quantity: 'Số lượng',
+        add_to_cart: 'Thêm vào giỏ'
       },
       order_page: {
         back_product: 'Quay lại Sản Phẩm',

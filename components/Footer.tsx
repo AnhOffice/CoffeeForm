@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import NotificationModal from './NotificationModal.tsx';
 import { Facebook, Instagram, Twitter, Mail, Heart, ArrowUp } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext.tsx';
 import { DATA } from '../constants.tsx';
@@ -7,9 +8,51 @@ const Footer: React.FC = () => {
   const { language } = useLanguage();
   const content = DATA[language].ui.footer;
   const navLinks = DATA[language].nav;
+  
+  const [email, setEmail] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [notification, setNotification] = useState<{
+    show: boolean;
+    type: 'success' | 'error';
+    message: string;
+  }>({ show: false, type: 'success', message: '' });
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const handleNewsletterSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!email) return;
+
+    setIsSubmitting(true);
+    const GOOGLE_FORM_ACTION_URL = "https://docs.google.com/forms/d/e/1FAIpQLSeYcjK85EQ_twffGL6CRQFOzkPRdpGsVMDQ3a6BBc74IYbcnA/formResponse";
+    
+    const formData = new FormData();
+    formData.append('entry.361133067', email);
+
+    try {
+      await fetch(GOOGLE_FORM_ACTION_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        body: formData
+      });
+      setNotification({
+        show: true,
+        type: 'success',
+        message: language === 'vn' ? 'Đăng ký thành công! Cảm ơn bạn.' : 'Subscribed successfully! Thank you.'
+      });
+      setEmail('');
+    } catch (error) {
+      console.error("Newsletter error:", error);
+      setNotification({
+        show: true,
+        type: 'error',
+        message: language === 'vn' ? 'Có lỗi xảy ra. Vui lòng thử lại.' : 'Something went wrong. Please try again.'
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -79,18 +122,25 @@ const Footer: React.FC = () => {
             <p className="text-sm mb-4" style={{ color: '#D7CCC8' }}>
               {content.newsletter.desc}
             </p>
-            <div className="flex gap-2">
+            <form onSubmit={handleNewsletterSubmit} className="flex gap-2">
               <input
                 type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 placeholder={content.newsletter.placeholder}
-                className="flex-1 px-4 py-2 rounded-full text-sm focus:outline-none"
+                className="flex-1 px-4 py-2 rounded-full text-sm focus:outline-none disabled:opacity-50"
                 style={{ background: 'rgba(255, 255, 255, 0.1)', color: '#FDFBF7', border: '1px solid rgba(255, 255, 255, 0.2)' }}
+                required
+                disabled={isSubmitting}
               />
-              <button className="p-2 rounded-full transition-all duration-300 hover:scale-110"
+              <button 
+                type="submit"
+                disabled={isSubmitting}
+                className="p-2 rounded-full transition-all duration-300 hover:scale-110 disabled:opacity-50 disabled:hover:scale-100"
                 style={{ background: 'linear-gradient(135deg, #2E7D32, #66BB6A)' }}>
                 <Mail className="w-5 h-5 text-white" />
               </button>
-            </div>
+            </form>
           </div>
         </div>
 
@@ -114,6 +164,12 @@ const Footer: React.FC = () => {
         style={{ background: 'linear-gradient(135deg, #2E7D32, #66BB6A)' }}>
         <ArrowUp className="w-6 h-6 text-white" />
       </button>
+      <NotificationModal
+        isOpen={notification.show}
+        onClose={() => setNotification(prev => ({ ...prev, show: false }))}
+        type={notification.type}
+        message={notification.message}
+      />
     </footer>
   );
 };

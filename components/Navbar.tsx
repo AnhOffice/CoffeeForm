@@ -3,13 +3,15 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import { DATA } from '../constants.tsx';
 import { useLanguage } from '../context/LanguageContext.tsx';
 import { useTheme } from '../context/ThemeContext.tsx';
-import { Globe, Menu, X, Moon, Sun } from 'lucide-react';
+import { useCart } from '../context/CartContext.tsx';
+import { Globe, Menu, X, Moon, Sun, ShoppingCart } from 'lucide-react';
 
 const Navbar: React.FC = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const { language, toggleLanguage } = useLanguage();
   const { theme, toggleTheme } = useTheme();
+  const { cartCount } = useCart();
   const [active, setActive] = useState<string>('home');
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -138,6 +140,23 @@ const Navbar: React.FC = () => {
                 )}
               </button>
             ))}
+            
+            {/* Cart Icon */}
+            <button
+              onClick={() => navigate('/order/cart')}
+              className="relative p-2.5 rounded-full transition-all duration-300 hover:scale-110"
+              style={{
+                background: isScrolled ? 'rgba(46, 125, 50, 0.1)' : 'rgba(255, 255, 255, 0.15)',
+                backdropFilter: 'blur(8px)'
+              }}
+            >
+              <ShoppingCart className="w-5 h-5" style={{ color: isScrolled ? '#2C1810' : '#FFFFFF' }} />
+              {cartCount > 0 && (
+                <span className="absolute -top-1 -right-1 w-5 h-5 flex items-center justify-center bg-[#D32F2F] text-white text-xs font-bold rounded-full border-2 border-white">
+                  {cartCount}
+                </span>
+              )}
+            </button>
             
             {/* Dark Mode Toggle */}
             <button 

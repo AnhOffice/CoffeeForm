@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import MotionWrapper from './MotionWrapper.tsx';
-import { MapPin, Phone, Mail, Send } from 'lucide-react';
+import NotificationModal from './NotificationModal.tsx';
+import { MapPin, Phone, Mail, Send, CheckCircle, XCircle, X } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext.tsx';
 import { DATA } from '../constants.tsx';
 
@@ -8,11 +9,52 @@ const Contact: React.FC = () => {
   const { language } = useLanguage();
   const content = DATA[language].ui.contact;
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+  
+  const [notification, setNotification] = useState<{
+    show: boolean;
+    type: 'success' | 'error';
+    message: string;
+  }>({ show: false, type: 'success', message: '' });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    alert('Message sent! (Demo)');
-    setFormData({ name: '', email: '', message: '' });
+    setIsSubmitting(true);
+
+    const GOOGLE_FORM_ACTION_URL = "https://docs.google.com/forms/d/e/1FAIpQLScI8w_GMs_vteCy0Y7q8TvhHr3hwWmbaypk6dB0Z5OQKL4Knw/formResponse";
+    
+    const formDataToSend = new FormData();
+    formDataToSend.append('entry.1137343760', formData.name);
+    formDataToSend.append('entry.256164201', formData.email);
+    formDataToSend.append('entry.1667283416', formData.message);
+
+    try {
+      await fetch(GOOGLE_FORM_ACTION_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        body: formDataToSend
+      });
+      setNotification({
+        show: true,
+        type: 'success',
+        message: language === 'vn' 
+          ? 'Cảm ơn! Chúng tôi đã nhận được tin nhắn của bạn và sẽ phản hồi sớm nhất.' 
+          : 'Thank you! We have received your message and will get back to you shortly.'
+      });
+      setFormData({ name: '', email: '', message: '' });
+    } catch (error) {
+      console.error("Form error:", error);
+      setNotification({
+        show: true,
+        type: 'error',
+        message: language === 'vn' 
+          ? 'Có lỗi xảy ra khi gửi. Vui lòng thử lại sau.' 
+          : 'Something went wrong. Please try again later.'
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -157,19 +199,28 @@ const Contact: React.FC = () => {
 
                 <button
                   type="submit"
-                  className="w-full flex items-center justify-center gap-2 px-8 py-4 rounded-full font-semibold text-white transition-all duration-300 hover:shadow-xl hover:scale-105"
+                  disabled={isSubmitting}
+                  className={`w-full flex items-center justify-center gap-2 px-8 py-4 rounded-full font-semibold text-white transition-all duration-300 hover:shadow-xl hover:scale-105 ${isSubmitting ? 'opacity-70 cursor-not-allowed' : ''}`}
                   style={{
                     background: 'linear-gradient(135deg, #2E7D32, #66BB6A)'
                   }}
                 >
-                  <span>{content.submit}</span>
-                  <Send className="w-5 h-5" />
+                  <span>{isSubmitting ? (language === 'vn' ? 'Đang gửi...' : 'Sending...') : content.submit}</span>
+                  {!isSubmitting && <Send className="w-5 h-5" />}
                 </button>
               </div>
             </form>
           </MotionWrapper>
         </div>
       </div>
+      {/* Custom Notification Modal */}
+      {/* Custom Notification Modal */}
+      <NotificationModal
+        isOpen={notification.show}
+        onClose={() => setNotification(prev => ({ ...prev, show: false }))}
+        type={notification.type}
+        message={notification.message}
+      />
     </section>
   );
 };
