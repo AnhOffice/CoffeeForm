@@ -184,42 +184,52 @@ const Navbar: React.FC = () => {
               }}
             >
               <Globe className="w-4 h-4" />
-              <span>{language === 'vn' ? '🇻🇳 VN' : '🇬🇧 EN'}</span>
+              <div className="flex items-center gap-2">
+                <img 
+                  src={language === 'vn' ? "https://flagcdn.com/w40/vn.png" : "https://flagcdn.com/w40/gb.png"} 
+                  alt={language === 'vn' ? "Vietnam Flag" : "UK Flag"}
+                  className="w-5 h-auto object-cover rounded-sm shadow-sm"
+                />
+                <span>{language === 'vn' ? 'VN' : 'EN'}</span>
+              </div>
             </button>
           </div>
 
-            {/* Mobile Cart Icon */}
-            <button
-               onClick={() => navigate('/order/cart')}
-               className="lg:hidden p-2.5 rounded-full transition-all duration-300 hover:scale-110 mr-2"
-               style={{
-                 background: isScrolled ? 'rgba(46, 125, 50, 0.1)' : 'rgba(255, 255, 255, 0.2)',
-                 backdropFilter: 'blur(8px)'
-               }}
-            >
-              <ShoppingCart className="w-5 h-5" style={{ color: isScrolled ? '#2C1810' : '#FFFFFF' }} />
-              {cartCount > 0 && (
-                <span className="absolute top-1 right-1 lg:-top-1 lg:-right-1 w-4 h-4 flex items-center justify-center bg-[#D32F2F] text-white text-[10px] font-bold rounded-full border border-white">
-                  {cartCount}
-                </span>
-              )}
-            </button>
+            {/* Mobile Actions Container */}
+            <div className="lg:hidden flex items-center gap-1">
+              {/* Mobile Cart Icon */}
+              <button
+                onClick={() => navigate('/order/cart')}
+                className="p-2.5 rounded-full transition-all duration-300 hover:scale-110 relative"
+                style={{
+                  background: isScrolled ? 'rgba(46, 125, 50, 0.1)' : 'rgba(255, 255, 255, 0.2)',
+                  backdropFilter: 'blur(8px)'
+                }}
+              >
+                <ShoppingCart className="w-5 h-5" style={{ color: isScrolled ? '#2C1810' : '#FFFFFF' }} />
+                {cartCount > 0 && (
+                  <span className="absolute top-0 right-0 w-4 h-4 flex items-center justify-center bg-[#D32F2F] text-white text-[10px] font-bold rounded-full border border-white translate-x-1 -translate-y-1">
+                    {cartCount}
+                  </span>
+                )}
+              </button>
 
-            {/* Mobile Menu Button */}
-            <button 
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="lg:hidden p-2.5 rounded-lg transition-all duration-300 hover:scale-110"
-              style={{
-                background: isScrolled ? 'rgba(46, 125, 50, 0.1)' : 'rgba(255, 255, 255, 0.2)',
-                backdropFilter: 'blur(8px)'
-              }}
-            >
-              {isMobileMenuOpen ? (
-                <X className="w-6 h-6" style={{ color: isScrolled ? '#2C1810' : '#FFFFFF' }} />
-              ) : (
-                <Menu className="w-6 h-6" style={{ color: isScrolled ? '#2C1810' : '#FFFFFF' }} />
-              )}
-            </button>
+              {/* Mobile Menu Button */}
+              <button 
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                className="p-2.5 rounded-lg transition-all duration-300 hover:scale-110"
+                style={{
+                  background: isScrolled ? 'rgba(46, 125, 50, 0.1)' : 'rgba(255, 255, 255, 0.2)',
+                  backdropFilter: 'blur(8px)'
+                }}
+              >
+                {isMobileMenuOpen ? (
+                  <X className="w-6 h-6" style={{ color: isScrolled ? '#2C1810' : '#FFFFFF' }} />
+                ) : (
+                  <Menu className="w-6 h-6" style={{ color: isScrolled ? '#2C1810' : '#FFFFFF' }} />
+                )}
+              </button>
+            </div>
           </div>
       </nav>
 
@@ -281,7 +291,14 @@ const Navbar: React.FC = () => {
               }}
             >
               <Globe className="w-5 h-5" />
-              <span>{language === 'vn' ? 'Switch to English' : 'Chuyển sang TV'}</span>
+              <div className="flex items-center gap-2">
+                 <img 
+                  src={language === 'vn' ? "https://flagcdn.com/w40/gb.png" : "https://flagcdn.com/w40/vn.png"} 
+                  alt={language === 'vn' ? "UK Flag" : "Vietnam Flag"}
+                  className="w-6 h-auto object-cover rounded-sm shadow-sm"
+                />
+                <span>{language === 'vn' ? 'Switch to English' : 'Chuyển sang TV'}</span>
+              </div>
             </button>
           </div>
         </div>

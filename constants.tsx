@@ -95,7 +95,7 @@ export const DATA = {
         title: '5 Ways to Recycle Coffee Grounds at Home',
         excerpt: 'Don\'t throw away your coffee grounds! Discover simple ways to turn them into fertilizer, body scrubs, and more.',
         date: 'Jan 24, 2024',
-        image: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&q=80&w=800',
+        image: 'https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&q=80&w=800',
         content: `Coffee grounds are a versatile resource that often goes to waste. The average coffee drinker produces tons of waste annually, but this "waste" is actually a goldmine for your home and garden. Here are 5 detailed ways to reuse them:
 
         1. **Nutrient-Rich Fertilizer**:
@@ -119,7 +119,7 @@ export const DATA = {
         title: 'Beauty from Coffee Grounds: The Ultimate Guide',
         excerpt: 'Natural skincare secrets from coffee grounds for exfoliating, brightening, and reducing puffiness.',
         date: 'Jan 20, 2024',
-        image: 'https://images.unsplash.com/photo-1515516947640-8cde5397ba0c?auto=format&fit=crop&q=80&w=800',
+        image: 'https://images.unsplash.com/photo-1596464716127-f2a82984de30?auto=format&fit=crop&q=80&w=800',
         content: `Your morning brew can double as your evening beauty routine. Caffeine is a superstar ingredient in many high-end skincare products because it acts as a vasoconstrictor and an antioxidant.
 
         **The Benefits:**
@@ -145,7 +145,7 @@ export const DATA = {
         title: 'Our Recycling Journey: From Waste to Art',
         excerpt: 'Why we chose coffee grounds as our main material? The story of our mission to reduce landfill waste.',
         date: 'Jan 15, 2024',
-        image: 'https://images.unsplash.com/photo-1525648199074-ce30b561a115?auto=format&fit=crop&q=80&w=800',
+        image: 'https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&q=80&w=800',
         content: `It all started with a simple observation at a local corner cafe. We watched as the barista knocked the portafilter against the bin, discarding a puck of espresso grounds. Again. And again. By the end of the hour, the bin was full.
 
         **The Problem**
@@ -165,7 +165,7 @@ export const DATA = {
         title: 'Workshop Spotlight: Coffee Ground Candles',
         excerpt: 'Join our latest crafting session where we transform spent grounds into aromatic, eco-friendly candles for your home.',
         date: 'Jan 10, 2024',
-        image: 'https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&q=80&w=800',
+        image: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&q=80&w=800',
         content: `Making candles from coffee grounds is not just about recycling; it's about creating an atmosphere. The natural oils in coffee combined with soy wax create a warm, comforting scent that requires no artificial fragrances.
 
         **Why Coffee Candles?**
@@ -175,6 +175,42 @@ export const DATA = {
 
         **Join Our Next Workshop**
         We hold monthly workshops at our studio where you can bring your own jar and learn the art of candle pouring. It's a perfect weekend activity for families and couples looking to disconnect and make something with their hands.`
+      },
+      {
+        id: '5',
+        title: 'Uses of Coffee in Daily Life',
+        excerpt: 'Coffee is not just a morning wake-up drink; it offers numerous benefits for daily life, from skincare to home cleaning.',
+        date: 'Jan 28, 2024',
+        image: 'https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&q=80&w=800',
+        content: `Coffee is not only a familiar drink that helps keep you awake every morning but also brings many other benefits in life. Thanks to containing caffeine and antioxidants, coffee can help increase concentration, improve mental health, and reduce fatigue.
+
+        **Versatile Uses of Cofe Grounds**
+        Besides that, used coffee grounds still have a lot of value. They can be used to deodorize rooms, refrigerators, or clean household items. In addition, coffee is also applied in skin care such as natural exfoliation, helping the skin become brighter and smoother.
+
+        **Creative Applications**
+        With diverse uses, coffee is also used in a number of other living and creative activities. Many people use coffee as a natural coloring agent for paintings, handicrafts, or decorations, which is both safe and environmentally friendly.
+
+        **Sustainable Living**
+        Not only that, utilizing used coffee grounds also contributes to reducing household waste. Instead of throwing them away, coffee can be reused in many different ways, helping to save costs and raise awareness of green living.
+
+        Thanks to that, coffee not only brings mental value but also contributes to creating a sustainable and more environmentally friendly lifestyle.`
+      },
+      {
+        id: '6',
+        title: 'Student Experience with Coffee and Recycling Projects',
+        excerpt: 'A reflection on a student project that turned into a journey of understanding sustainability and teamwork.',
+        date: 'Jan 28, 2024',
+        image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=800',
+        content: `As students, we are often exposed to many practical learning projects. Among them, the project related to coffee and recycling is a quite special experience. Initially, the group just saw this as a class assignment, but during the implementation process, we gradually realized that the project brought more value than expected.
+
+        **Understanding the Lifecycle**
+        The project process helped us understand better the life cycle of coffee, from the time it is used until it becomes coffee grounds. Previously, coffee grounds were often considered waste, but when researching deeper, the group realized they can still be utilized in many different ways. This made us change our perspective on recycling and using resources in daily life.
+
+        **Teamwork and Collaboration**
+        Besides knowledge, the project also helped practice teamwork skills. Each member took on a different role, from researching information, building content to designing and presenting. Coordinating and exchanging ideas helped the whole group understand the importance of cooperation in practical projects.
+
+        **Environmental Awareness**
+        Through the coffee recycling project, we not only completed academic requirements but also raised awareness of environmental protection. The project became a motivation for each member to gradually form a greener living habit, starting from small actions like reusing and limiting waste. This is a memorable and meaningful experience in the student's study time.`
       }
     ],
     ui: {
@@ -368,7 +404,7 @@ export const DATA = {
         title: '5 Cách Tái Chế Bã Cà Phê Hiệu Quả Tại Nhà',
         excerpt: 'Đừng vội vứt bỏ bã cà phê! Khám phá những cách đơn giản nhưng bất ngờ để biến chúng thành phân bón, mỹ phẩm và vật dụng hữu ích.',
         date: '24 Tháng 1, 2024',
-        image: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&q=80&w=800',
+        image: 'https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&q=80&w=800',
         content: `Bã cà phê là một nguồn tài nguyên quý giá thường bị lãng phí. Trung bình mỗi người uống cà phê thải ra một lượng lớn bã mỗi năm. Thay vì ném vào thùng rác, đây là 5 cách chi tiết để bạn tận dụng chúng:
 
         1. **Phân Bón Giàu Dinh Dưỡng**:
@@ -392,7 +428,7 @@ export const DATA = {
         title: 'Làm Đẹp Từ Bã Cà Phê: Hướng Dẫn Chi Tiết',
         excerpt: 'Bí quyết dưỡng da tự nhiên từ bã cà phê giúp tẩy tế bào chết, làm sáng da, giảm bọng mắt và cải thiện làn da của bạn.',
         date: '20 Tháng 1, 2024',
-        image: 'https://images.unsplash.com/photo-1515516947640-8cde5397ba0c?auto=format&fit=crop&q=80&w=800',
+        image: 'https://images.unsplash.com/photo-1596464716127-f2a82984de30?auto=format&fit=crop&q=80&w=800',
         content: `Cafe sáng của bạn có thể trở thành liệu trình spa buổi tối. Caffeine là một thành phần "ngôi sao" trong nhiều sản phẩm dưỡng da cao cấp nhờ khả năng chống oxy hóa và làm co mạch máu.
 
         **Lợi Ích Của Cà Phê Với Da:**
@@ -418,7 +454,7 @@ export const DATA = {
         title: 'Hành Trình Của Chúng Tôi: Từ Rác Thải Đến Nghệ Thuật',
         excerpt: 'Tại sao chúng tôi chọn bã cà phê? Câu chuyện về sứ mệnh giảm thiểu rác thải bãi chôn lấp và tái sinh vật liệu.',
         date: '15 Tháng 1, 2024',
-        image: 'https://images.unsplash.com/photo-1525648199074-ce30b561a115?auto=format&fit=crop&q=80&w=800',
+        image: 'https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&q=80&w=800',
         content: `Tất cả bắt đầu từ một quán cà phê góc phố quen thuộc. Chúng tôi quan sát người pha chế gõ tay cầm máy pha, đổ bỏ khối bã cà phê nén vào thùng rác. Lặp đi lặp lại. Đến cuối giờ, thùng rác đã đầy ắp.
 
         **Vấn Đề**
@@ -438,7 +474,7 @@ export const DATA = {
         title: 'Tiêu điểm Workshop: Nến Thơm Từ Bã Cà Phê',
         excerpt: 'Tham gia buổi thủ công mới nhất của chúng tôi, nơi chúng ta biến bã cà phê thành những lọ nến thơm sinh thái cho ngôi nhà của bạn.',
         date: '10 Tháng 1, 2024',
-        image: 'https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&q=80&w=800',
+        image: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&q=80&w=800',
         content: `Làm nến từ bã cà phê không chỉ là tái chế; đó là việc kiến tạo một bầu không khí. Tinh dầu tự nhiên trong cà phê kết hợp với sáp đậu nành tạo nên một hương thơm ấm áp, dễ chịu mà không cần bất kỳ hương liệu nhân tạo nào.
 
         **Tại Sao Là Nến Cà Phê?**
@@ -448,6 +484,42 @@ export const DATA = {
 
         **Đăng Ký Workshop**
         Chúng tôi tổ chức các buổi workshop hàng tháng tại studio. Hãy mang theo chiếc lọ thủy tinh cũ của bạn và học nghệ thuật đổ nến. Đây là hoạt động cuối tuần hoàn hảo cho gia đình và các cặp đôi muốn "sống chậm" và tự tay làm ra những món đồ ý nghĩa.`
+      },
+      {
+        id: '5',
+        title: 'Công Dụng Của Cà Phê Trong Đời Sống Hằng Ngày',
+        excerpt: 'Cà phê không chỉ là thức uống quen thuộc giúp tỉnh táo mỗi sáng mà còn mang lại nhiều lợi ích khác trong đời sống.',
+        date: '28 Tháng 1, 2024',
+        image: 'https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&q=80&w=800',
+        content: `Cà phê không chỉ là thức uống quen thuộc giúp tỉnh táo mỗi sáng mà còn mang lại nhiều lợi ích khác trong đời sống. Nhờ chứa caffeine và các chất chống oxy hóa, cà phê có thể giúp tăng sự tập trung, cải thiện tinh thần và giảm cảm giác mệt mỏi.
+
+        **Tận Dụng Bã Cà Phê**
+        Bên cạnh đó, bã cà phê sau khi sử dụng vẫn còn nhiều giá trị. Chúng có thể được dùng để khử mùi trong phòng, tủ lạnh hoặc làm sạch các vật dụng trong gia đình. Ngoài ra, cà phê còn được ứng dụng trong chăm sóc da như tẩy tế bào chết tự nhiên, giúp da sáng và mịn hơn.
+
+        **Ứng Dụng Sáng Tạo**
+        Với những công dụng đa dạng, cà phê còn được sử dụng trong một số hoạt động sinh hoạt và sáng tạo khác. Nhiều người tận dụng cà phê để làm chất tạo màu tự nhiên cho tranh vẽ, đồ thủ công hoặc trang trí, vừa an toàn vừa thân thiện với môi trường.
+
+        **Lối Sống Xanh**
+        Không chỉ vậy, việc tận dụng bã cà phê sau khi sử dụng còn góp phần giảm lượng rác thải sinh hoạt. Thay vì bỏ đi, cà phê có thể được tái sử dụng theo nhiều cách khác nhau, giúp tiết kiệm chi phí và nâng cao ý thức sống xanh.
+
+        Nhờ đó, cà phê không chỉ mang lại giá trị về mặt tinh thần mà còn góp phần tạo nên lối sống bền vững và thân thiện hơn với môi trường.`
+      },
+      {
+        id: '6',
+        title: 'Trải Nghiệm Của Sinh Viên Với Dự Án Cà Phê Và Tái Chế',
+        excerpt: 'Là sinh viên, chúng mình thường được tiếp cận với nhiều dự án học tập mang tính thực hành. Trong đó, dự án liên quan đến cà phê và tái chế là một trải nghiệm khá đặc biệt.',
+        date: '28 Tháng 1, 2024',
+        image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=800',
+        content: `Là sinh viên, chúng mình thường được tiếp cận với nhiều dự án học tập mang tính thực hành. Trong đó, dự án liên quan đến cà phê và tái chế là một trải nghiệm khá đặc biệt. Ban đầu, nhóm chỉ xem đây là một bài tập trên lớp, nhưng trong quá trình thực hiện, chúng mình dần nhận ra dự án mang lại nhiều giá trị hơn mong đợi.
+
+        **Hiểu Về Vòng Đời Cà Phê**
+        Quá trình làm dự án giúp chúng mình hiểu rõ hơn về vòng đời của cà phê, từ lúc được sử dụng cho đến khi trở thành bã cà phê. Trước đây, bã cà phê thường bị xem là rác thải, nhưng khi tìm hiểu sâu hơn, nhóm nhận ra chúng vẫn có thể được tận dụng theo nhiều cách khác nhau. Điều này khiến chúng mình thay đổi góc nhìn về việc tái chế và sử dụng tài nguyên trong đời sống hằng ngày.
+
+        **Kỹ Năng Làm Việc Nhóm**
+        Bên cạnh kiến thức, dự án còn giúp rèn luyện kỹ năng làm việc nhóm. Mỗi thành viên đảm nhận một vai trò khác nhau, từ tìm hiểu thông tin, xây dựng nội dung cho đến thiết kế và trình bày. Việc phối hợp và trao đổi ý tưởng giúp cả nhóm hiểu rõ tầm quan trọng của sự hợp tác trong các dự án thực tế.
+
+        **Nâng Cao Ý Thức Môi Trường**
+        Thông qua dự án cà phê tái chế, chúng mình không chỉ hoàn thành yêu cầu học tập mà còn nâng cao ý thức bảo vệ môi trường. Dự án trở thành động lực để mỗi thành viên dần hình thành thói quen sống xanh hơn, bắt đầu từ những hành động nhỏ như tái sử dụng và hạn chế lãng phí. Đây là một trải nghiệm đáng nhớ và có ý nghĩa trong quãng thời gian học tập của sinh viên.`
       }
     ],
     ui: {
