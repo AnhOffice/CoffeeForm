@@ -102,7 +102,7 @@ const Navbar: React.FC = () => {
             <span 
               className="text-xl md:text-2xl font-bold tracking-tight transition-all duration-300"
               style={{ 
-                fontFamily: "'Playfair Display', serif",
+                fontFamily: "'Merriweather', serif",
                 color: isScrolled ? '#2C1810' : '#FFFFFF',
                 textShadow: isScrolled ? 'none' : '0 2px 8px rgba(0,0,0,0.5)'
               }}
@@ -242,7 +242,7 @@ const Navbar: React.FC = () => {
       >
         <div className="p-6 h-full flex flex-col">
           <div className="flex justify-between items-center mb-8">
-            <span className="text-xl font-bold" style={{ fontFamily: "'Playfair Display', serif", color: '#2C1810' }}>
+            <span className="text-xl font-bold" style={{ fontFamily: "'Merriweather', serif", color: '#2C1810' }}>
               Menu
             </span>
             <button 

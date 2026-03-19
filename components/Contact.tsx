@@ -70,7 +70,7 @@ const Contact: React.FC = () => {
               }}>
               {content.subtitle}
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold mb-4" style={{ fontFamily: "'Playfair Display', serif", color: '#2C1810' }}>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4" style={{ fontFamily: "'Merriweather', serif", color: '#2C1810' }}>
               {content.title}
             </h2>
             <p className="max-w-2xl mx-auto text-lg" style={{ color: '#6D4C41' }}>
@@ -136,7 +136,7 @@ const Contact: React.FC = () => {
           {/* Contact Form */}
           <MotionWrapper delay={200}>
             <form onSubmit={handleSubmit} className="p-8 rounded-2xl shadow-xl" style={{ background: '#FFFFFF' }}>
-              <h3 className="text-2xl font-bold mb-2" style={{ fontFamily: "'Playfair Display', serif", color: '#2C1810' }}>
+              <h3 className="text-2xl font-bold mb-2" style={{ fontFamily: "'Merriweather', serif", color: '#2C1810' }}>
                 {content.form_title}
               </h3>
               <p className="text-sm mb-6" style={{ color: '#6D4C41' }}>

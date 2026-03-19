@@ -527,7 +527,7 @@ export const DATA = {
     ui: {
       hero: {
         subtitle: 'Hành trình từ tách cà phê đến tác phẩm nghệ thuật',
-        title: 'Sống Lại \n Cuộc Đời Mới',
+        title: 'Sống Lại\nCuộc Đời Mới',
         description: 'Chúng tôi biến bã cà phê bỏ đi thành những món đồ thiết kế bền vững, trân trọng sự không hoàn hảo và câu chuyện vòng đời của chúng.',
         cta_collection: 'Xem Bộ Sưu Tập',
         cta_story: 'Câu Chuyện Của Chúng Tôi'

@@ -62,8 +62,9 @@ const Hero: React.FC = () => {
           </div>
 
           {/* Main Heading */}
-          <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl mb-8 leading-tight whitespace-pre-line"
+          <h1 className="text-4xl md:text-6xl lg:text-7xl mb-8 font-bold leading-tight whitespace-pre-line text-center mx-auto tracking-wide"
             style={{
+              fontFamily: "'Montserrat', sans-serif",
               textShadow: '0 4px 20px rgba(0, 0, 0, 0.5)'
             }}>
             {content.title}

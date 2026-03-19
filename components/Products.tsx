@@ -16,7 +16,7 @@ const Products: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 md:px-8">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 md:mb-16 gap-6">
           <MotionWrapper>
-            <h2 className="text-4xl md:text-5xl font-bold" style={{ fontFamily: "'Playfair Display', serif", color: '#2C1810' }}>
+            <h2 className="text-4xl md:text-5xl font-bold" style={{ fontFamily: "'Merriweather', serif", color: '#2C1810' }}>
               {content.title}
             </h2>
             <p className="mt-4 max-w-md text-lg" style={{ color: '#6D4C41' }}>
@@ -80,7 +80,7 @@ const Products: React.FC = () => {
                   {/* Product Info */}
                   <div className="p-6">
                     <div className="flex justify-between items-start mb-3">
-                      <h3 className="text-xl font-bold" style={{ fontFamily: "'Playfair Display', serif", color: '#2C1810' }}>
+                      <h3 className="text-xl font-bold" style={{ fontFamily: "'Merriweather', serif", color: '#2C1810' }}>
                         {product.name}
                       </h3>
                       <span className="font-bold text-lg" style={{ color: '#2E7D32' }}>

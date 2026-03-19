@@ -69,7 +69,7 @@ const Footer: React.FC = () => {
                   className="w-full h-full object-cover" 
                 />
               </div>
-              <span className="text-xl font-bold" style={{ fontFamily: "'Playfair Display', serif", color: '#FDFBF7' }}>
+              <span className="text-xl font-bold" style={{ fontFamily: "'Merriweather', serif", color: '#FDFBF7' }}>
                 COFFEE FORM
               </span>
             </div>
@@ -86,7 +86,7 @@ const Footer: React.FC = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-bold mb-4 text-lg" style={{ color: '#FDFBF7', fontFamily: "'Playfair Display', serif" }}>
+            <h4 className="font-bold mb-4 text-lg" style={{ color: '#FDFBF7', fontFamily: "'Merriweather', serif" }}>
               {content.quick_links}
             </h4>
             <ul className="space-y-2">
@@ -103,7 +103,7 @@ const Footer: React.FC = () => {
 
           {/* Resources */}
           <div>
-            <h4 className="font-bold mb-4 text-lg" style={{ color: '#FDFBF7', fontFamily: "'Playfair Display', serif" }}>
+            <h4 className="font-bold mb-4 text-lg" style={{ color: '#FDFBF7', fontFamily: "'Merriweather', serif" }}>
               {content.resources.title}
             </h4>
             <ul className="space-y-2 text-sm" style={{ color: '#D7CCC8' }}>
@@ -116,7 +116,7 @@ const Footer: React.FC = () => {
 
           {/* Newsletter */}
           <div>
-            <h4 className="font-bold mb-4 text-lg" style={{ color: '#FDFBF7', fontFamily: "'Playfair Display', serif" }}>
+            <h4 className="font-bold mb-4 text-lg" style={{ color: '#FDFBF7', fontFamily: "'Merriweather', serif" }}>
               {content.newsletter.title}
             </h4>
             <p className="text-sm mb-4" style={{ color: '#D7CCC8' }}>

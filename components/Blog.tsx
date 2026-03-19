@@ -15,7 +15,7 @@ const Blog: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 md:px-8 relative">
         <MotionWrapper>
           <div className="text-center mb-12 md:mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4" style={{ fontFamily: "'Playfair Display', serif", color: '#2C1810' }}>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4" style={{ fontFamily: "'Merriweather', serif", color: '#2C1810' }}>
               {content.title}
             </h2>
             <p className="max-w-2xl mx-auto text-lg mb-8" style={{ color: '#6D4C41' }}>
@@ -65,7 +65,7 @@ const Blog: React.FC = () => {
                   
                   {/* Content */}
                   <div className="p-6 flex-grow flex flex-col">
-                    <h3 className="text-xl font-bold mb-3 line-clamp-2 group-hover:text-[#2E7D32] transition-colors" style={{ fontFamily: "'Playfair Display', serif", color: '#2C1810' }}>
+                    <h3 className="text-xl font-bold mb-3 line-clamp-2 group-hover:text-[#2E7D32] transition-colors" style={{ fontFamily: "'Merriweather', serif", color: '#2C1810' }}>
                       {post.title}
                     </h3>
                     <p className="text-sm leading-relaxed mb-6 line-clamp-3 flex-grow" style={{ color: '#6D4C41' }}>

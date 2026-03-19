@@ -21,7 +21,7 @@ const Team: React.FC = () => {
               }}>
               {content.subtitle}
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold mb-4" style={{ fontFamily: "'Playfair Display', serif", color: '#FDFBF7' }}>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4" style={{ fontFamily: "'Merriweather', serif", color: '#FDFBF7' }}>
               {content.title}
             </h2>
             <p className="max-w-2xl mx-auto text-lg" style={{ color: '#D7CCC8' }}>
@@ -52,7 +52,7 @@ const Team: React.FC = () => {
                   </div>
                 </div>
                 
-                <h3 className="text-2xl font-bold mb-2" style={{ fontFamily: "'Playfair Display', serif", color: '#FDFBF7' }}>
+                <h3 className="text-2xl font-bold mb-2" style={{ fontFamily: "'Merriweather', serif", color: '#FDFBF7' }}>
                   {member.name}
                 </h3>
                 <span className="inline-block px-4 py-1 rounded-full text-sm font-semibold uppercase tracking-wide mb-4"
@@ -97,7 +97,7 @@ const Team: React.FC = () => {
                   </div>
                 </div>
                 
-                <h3 className="text-2xl font-bold mb-2" style={{ fontFamily: "'Playfair Display', serif", color: '#FDFBF7' }}>
+                <h3 className="text-2xl font-bold mb-2" style={{ fontFamily: "'Merriweather', serif", color: '#FDFBF7' }}>
                   {member.name}
                 </h3>
                 <span className="inline-block px-4 py-1 rounded-full text-sm font-semibold uppercase tracking-wide mb-4"

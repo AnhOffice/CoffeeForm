@@ -17,7 +17,7 @@ const About: React.FC = () => {
         <MotionWrapper>
           <div className="text-center mb-20 md:mb-32">
             <Quote className="w-16 h-16 mx-auto mb-8" style={{ color: '#2E7D32', opacity: 0.2 }} />
-            <p className="text-2xl md:text-5xl font-serif italic mb-8 leading-tight max-w-5xl mx-auto" style={{ fontFamily: "'Cormorant Garamond', serif", color: '#2C1810' }}>
+            <p className="text-2xl md:text-5xl font-serif italic mb-8 leading-tight max-w-5xl mx-auto" style={{ fontFamily: "'Merriweather', serif", color: '#2C1810' }}>
               {content.quote}
             </p>
             <div className="flex justify-center items-center gap-4">
@@ -25,7 +25,7 @@ const About: React.FC = () => {
               <span className="text-[#2E7D32] font-bold tracking-widest uppercase text-sm">{content.philosophy}</span>
               <div className="h-px w-20 bg-[#D7CCC8]"></div>
             </div>
-            <h1 className="text-4xl md:text-6xl font-black mt-8 tracking-tight uppercase" style={{ color: '#2C1810', fontFamily: "'Playfair Display', serif" }}>
+            <h1 className="text-4xl md:text-6xl font-black mt-8 tracking-tight uppercase" style={{ color: '#2C1810', fontFamily: "'Merriweather', serif" }}>
               FROM CUP <span className="text-[#2E7D32]">TO CORNER</span>
             </h1>
           </div>

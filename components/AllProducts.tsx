@@ -46,7 +46,7 @@ const AllProducts: React.FC = () => {
           <span className="inline-block px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-4 bg-white/10 text-[#81C784] backdrop-blur-md">
             COFFEE FORM
           </span>
-          <h1 className="text-4xl md:text-5xl font-bold text-[#FDFBF7] mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>
+          <h1 className="text-4xl md:text-5xl font-bold text-[#FDFBF7] mb-4" style={{ fontFamily: "'Merriweather', serif" }}>
             {content.title}
           </h1>
           <p className="text-[#D7CCC8] text-lg max-w-2xl mx-auto">

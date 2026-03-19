@@ -39,7 +39,7 @@ const NotificationModal: React.FC<NotificationModalProps> = ({ isOpen, onClose, 
             )}
           </div>
           
-          <h3 className="text-xl font-bold mb-2" style={{ color: '#2C1810', fontFamily: "'Playfair Display', serif" }}>
+          <h3 className="text-xl font-bold mb-2" style={{ color: '#2C1810', fontFamily: "'Merriweather', serif" }}>
             {type === 'success' 
               ? (language === 'vn' ? 'Thành Công!' : 'Success!') 
               : (language === 'vn' ? 'Lỗi!' : 'Error!')}
